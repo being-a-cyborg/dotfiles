@@ -34,7 +34,6 @@ set cpoptions+=n
 call plug#begin('~/.vim/plugged')
 Plug 'ap/vim-css-color'
 Plug 'arcticicestudio/nord-vim'
-Plug 'nightsense/carbonized'
 Plug 'jacoborus/tender.vim'
 Plug 'itchyny/lightline.vim'
 call plug#end()
