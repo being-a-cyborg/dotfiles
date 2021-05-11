@@ -1,0 +1,40 @@
+mpd_host = "127.0.0.1"
+mpd_port = "6600"
+mpd_music_dir = "/home/rusetsky/Music"
+
+playlist_disable_highlight_delay = 0
+autocenter_mode = yes
+
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+
+visualizer_sync_interval = "60"
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum"
+#visualizer_type = "eclispe"
+#visualizer_color = 7,5,8,3
+#visualizer_look = "||"
+#visualizer_look = "▒░"
+#visualizer_look = "◈░"
+#visualizer_look = "┃┃"
+#visualizer_look = "●┃"
+#visualizer_look = "█┇"
+#visualizer_look = "▒░"
+visualizer_look = "▋▍"
+#visualizer_look = "▋█"
+#visualizer_look = "▋█"
+#visualizer_look = "▋░"
+#visualizer_look = "▋▓"
+#visualizer_look = "▋☰"
+#visualizer_look = "☰⛆"
+#visualizer_look = "☰▓"
+#progressbar_look = "___"
+#progressbar_look = "─╼ "
+#progressbar_look = "┅┅┄"
+#progressbar_look = "─➞─"
+#progressbar_look = "─┅─"
+#progressbar_look = "▁▁▁"
+#progressbar_look = "≈►·"
+#progressbar_look = "→→"
+
+execute_on_song_change = notify-send "$(mpc --format '%artist% - %title%' current)"
